@@ -1,0 +1,11 @@
+header{
+display: flex;
+justify-content: space-between;
+padding: 20px 50px;
+background-color:white;
+}
+body{
+    background-image: url(https://www.ernestdempsey.com/wp-content/uploads/2022/01/Online-courses.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+}

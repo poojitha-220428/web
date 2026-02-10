@@ -130,11 +130,13 @@
         <a href="test.html">Test series</a>
         <a href="Ncerts.html">Ncerts</a>
         <a href="login.html">Sign in</a>
+        <a href="register.html">register</a>
        </nav>
 <div class="hero">
  <aside>
     <h1>Dreaming Of IAS?</h1>
     <h3>New batch starts</h3>
+
     <form action="strategy.html" method="get">
         <input type="submit" value="Join Us" >
     </form>
@@ -173,7 +175,68 @@
     
 </footer>
 
+<script>
+        const acadmeyName="Sankalp Civils";
+        let batchNumber=1;
+        console.log(acadmeyName);
+        console.log(batchNumber);
+        try{
+            acadmeyName="Another academy";
+        }catch(err){
+            console.log("const error:",err.message);
+        }
+        document.querySelector(".hero h3").innerText="New batch starts|batch" + batchNumber;
+        function increaseBatch(){
+            batchNumber++;
+        }
+        function welcomeMessage(){
+            return "welcome to sankalp civils";
+        }
+      /*  const showAlert=function(msg){
+            alert(msg);
+        };*/
+        //object
+        let course={
+            name:"upsc civil services",
+            stages:3,
+            active:true
+        };
+        console.log(course.name);
+        console.log(course["stages"]);
+        alert("Welcome to sankalp civils");
+        let join=confirm("Do you want to join the new batch?");
+        let name=prompt("enter your name");
+        //methods
+        let examstages={
+            showprelims:function(){
+                document.querySelector(".prelims").innerHTML="<p>Objective Exam</p>";
+            },
+            showMains:function(){
+                document.querySelector(".Mains").innerHTML="<p>Descriptive Exam</p>";
+             },
+             showInterview:function(){
+                document.querySelector(".Interview").innerHTML="<p>Personality Test</p>";
+             }
 
+        };
+//PRELIMS  EVENT 
+        document.querySelector(".Prelims").addEventListener("mouseover",examstages.showprelims);{
+        this.style.backgroundColor = "darkgreen";
+        };
+// MAINS EVENT
+        document.querySelector(".mains").addEventListener("click",examstages.showMains);{
+        this.style.backgroundColor = "green";
+};
+// INTERVIEW EVENT 
+        document.querySelector(".Interview").addEventListener("click",examstages.showInterview);{
+        this.style.backgroundColor = "black";
+};
+//JOIN US BUTTON – CLICK 
+/*document.querySelector(".hero input").addEventListener("click", function () {
+    alert("Join Us button clicked!");
+});*/
+
+    </script>
     </body>
    
     </html>

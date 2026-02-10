@@ -48,18 +48,18 @@
             
             <center><h1 class="vast-shadow-regular">Sankalp Civils</h1></center><br>
         
-            <form action="index.html" method="post" align="center">
+            <form action="process.php" method="post" align="center">
             NAME:
-            <input type="username" placeholder="enter your name" required><br><br><br><br>
+            <input type="username" name="username" placeholder="enter your name" required><br><br><br><br>
             E-mail:
-            <input type="email" placeholder="enter your mailid" required><br><br><br><br>
+            <input type="email" name="mailid" placeholder="enter your mailid" required><br><br><br><br>
             PASSWORD:
-            <input type="password" placeholder="password" maxlength="10" required><br><br><br>
+            <input type="password" name="password" placeholder="enter your password" maxlength="10" required><br><br><br>
             gender:&nbsp;
             Male
-            <input type="radio" class="male" id="male">&nbsp;&nbsp;
+            <input type="radio" name="male" class="male" id="male">&nbsp;&nbsp;
             Female
-            <input type="radio" class="Female" id="Female"><br><br><br>
+            <input type="radio" class="Female" name="female" id="Female"><br><br><br>
             <label>City:</label>
             <select>
             <option>AP</option>
@@ -68,7 +68,7 @@
             <option>karnataka</option>
             <option>Telangana</option></select><br><br>
 
-            <input type="submit" value="Login">
+            <input type="submit" value="Login" name="login">
         </form>
         </div>
     
